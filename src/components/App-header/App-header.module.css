@@ -1,0 +1,43 @@
+:root {
+  --dark-colors-accent----dark: #b4a186;
+  --dark-colors-light-gray---dark: #9a9a9a;
+  --dark-colors-gray---dark: #3d3d3d;
+  --dark-colors-dark-gray---dark: #272727;
+  --dark-colors-black---dark: #0a0a0a;
+  --dark-colors-white---dark: #fbfbfb;
+  --light-colors-errors---light: #d82700;
+  --light-colors-accent---light: #a18a68;
+  --light-colors-black---light: #000;
+  --light-colors-dark-gray---light: #707070;
+  --light-colors-gray---light: #d8d8d8;
+  --light-colors-light-gray---light: #efefef;
+  --light-colors-white---light: #fff;
+}
+:root {
+  --font-family: "DM Sans", sans-serif;
+  --second-family: "Allerta Stencil", sans-serif;
+}
+.conteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font: 400 35px / 1.15714 var(--second-family);
+  color: var(--light-colors-accent---light);
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.shop {
+  font: 400 16px / 1.6875 var(--font-family);
+  color: var(--light-colors-black---light);
+}
+.line {
+  border: 1px solid var(--light-colors-dark-gray---light);
+  width: 17px;
+  height: 0px;
+  transform: rotate(-90deg);
+}
