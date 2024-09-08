@@ -19,11 +19,19 @@
 }
 .conteiner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 96px;
+  margin-top: 48px;
+  padding-bottom: 17px;
   align-items: center;
+  border-bottom: 1px solid var(--light-colors-gray---light);
 }
 .logo {
   font: 400 35px / 1.15714 var(--second-family);
+  color: var(--light-colors-black---light);
+  text-decoration: none;
+}
+.logo_letter {
   color: var(--light-colors-accent---light);
 }
 .right {
@@ -31,9 +39,10 @@
   align-items: center;
   gap: 64px;
 }
-.shop {
+.link {
   font: 400 16px / 1.6875 var(--font-family);
   color: var(--light-colors-black---light);
+  text-decoration: none;
 }
 .line {
   border: 1px solid var(--light-colors-dark-gray---light);

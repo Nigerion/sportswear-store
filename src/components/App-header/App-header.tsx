@@ -5,35 +5,29 @@ import { Link } from "react-router-dom";
 const AppHeader = () => {
   return (
     <div className={styles.conteiner}>
-      <div className={styles.logo}>
-        <Link to="/">SHOPPE</Link>
-      </div>
+      <Link to="/" className={styles.logo}>
+        <span className={styles.logo_letter}>S</span>HOPPE
+      </Link>
       <div className={styles.right}>
-        <div className={styles.shop}>
-          <Link to="/shop">Shop</Link>
-        </div>
-        <div className={styles.blog}>
-          <Link to="/blog">Blog</Link>
-        </div>
-        <div className={styles.story}>
-          <Link to="/story">Our Story</Link>
-        </div>
+        <Link to="/shop" className={styles.link}>
+          Shop
+        </Link>
+        <Link to="/blog" className={styles.link}>
+          Blog
+        </Link>
+        <Link to="/story" className={styles.link}>
+          Our Story
+        </Link>
         <div className={styles.line}></div>
-        <div>
-          <Link to="/search">
-            <IconSvgSelector name="magnifier" />
-          </Link>
-        </div>
-        <div>
-          <Link to="/shopping">
-            <IconSvgSelector name="shopping" />
-          </Link>
-        </div>
-        <div>
-          <Link to="/user">
-            <IconSvgSelector name="people" />
-          </Link>
-        </div>
+        <Link to="/search">
+          <IconSvgSelector name="magnifier" />
+        </Link>
+        <Link to="/shopping">
+          <IconSvgSelector name="shopping" />
+        </Link>
+        <Link to="/user">
+          <IconSvgSelector name="people" />
+        </Link>
       </div>
     </div>
   );

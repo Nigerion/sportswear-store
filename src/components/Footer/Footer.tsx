@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IconSvgSelector } from "../../IconSvgSelector/IconSvgSelector";
 import styles from "./Footer.module.css";
 
@@ -6,9 +7,15 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.top}>
         <div className={styles.topLeft}>
-          <div className={styles.text}>CONTACT</div>
-          <div className={styles.text}>TERMS OF SERVICES</div>
-          <div className={styles.text}>SHIPPING AND RETURNS</div>
+          <Link to="/" className={styles.link}>
+            CONTACT
+          </Link>
+          <Link to="/" className={styles.link}>
+            TERMS OF SERVICES
+          </Link>
+          <Link to="/" className={styles.link}>
+            SHIPPING AND RETURNS
+          </Link>
         </div>
         <div className={styles.topRight}>
           <div>
@@ -24,21 +31,22 @@ const Footer = () => {
       </div>
       <div className={styles.bottom}>
         <div className={styles.bottomLeft}>
-          © 2021 Shelly. Terms of use and privacy policy.
+          © 2021 Shelly. <span className={styles.word}>Terms of use </span> and{" "}
+          <span className={styles.word}>privacy policy.</span>
         </div>
         <div className={styles.bottomRight}>
-          <div className={styles.in}>
+          <Link to="/" className={styles.in}>
             <IconSvgSelector name="in"></IconSvgSelector>
-          </div>
-          <div className={styles.facebook}>
+          </Link>
+          <Link to="/" className={styles.facebook}>
             <IconSvgSelector name="facebook"></IconSvgSelector>
-          </div>
-          <div className={styles.inst}>
+          </Link>
+          <Link to="/" className={styles.inst}>
             <IconSvgSelector name="inst"></IconSvgSelector>
-          </div>
-          <div className={styles.tviter}>
+          </Link>
+          <Link to="/" className={styles.tviter}>
             <IconSvgSelector name="tviter"></IconSvgSelector>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

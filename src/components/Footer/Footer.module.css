@@ -41,9 +41,10 @@
   display: flex;
   gap: 30px;
 }
-.text {
+.link {
   font: 400 16px / 1.6875 var(--font-family);
   color: var(--light-colors-dark-gray---light);
+  text-decoration: none;
 }
 .bottomLeft {
   font: 400 16px / 1.6875 var(--font-family);
@@ -68,4 +69,8 @@
 }
 .input:focus {
   outline: none;
+}
+.word {
+  font: 400 16px / 1.6875 var(--font-family);
+  color: var(--light-colors-dark-gray---light);
 }
