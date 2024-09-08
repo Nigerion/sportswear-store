@@ -1,4 +1,4 @@
-import { FooterSvgSelector } from "./FooterSvgSelector";
+import { IconSvgSelector } from "../../IconSvgSelector/IconSvgSelector";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
               placeholder="Give an email, get the newsletter."
               className={styles.input}
             />
-            <FooterSvgSelector id="arrow"></FooterSvgSelector>
+            <IconSvgSelector name="arrow"></IconSvgSelector>
           </div>
           <div className={styles.line}></div>
         </div>
@@ -28,16 +28,16 @@ const Footer = () => {
         </div>
         <div className={styles.bottomRight}>
           <div className={styles.in}>
-            <FooterSvgSelector id="in"></FooterSvgSelector>
+            <IconSvgSelector name="in"></IconSvgSelector>
           </div>
           <div className={styles.facebook}>
-            <FooterSvgSelector id="facebook"></FooterSvgSelector>
+            <IconSvgSelector name="facebook"></IconSvgSelector>
           </div>
           <div className={styles.inst}>
-            <FooterSvgSelector id="inst"></FooterSvgSelector>
+            <IconSvgSelector name="inst"></IconSvgSelector>
           </div>
           <div className={styles.tviter}>
-            <FooterSvgSelector id="tviter"></FooterSvgSelector>
+            <IconSvgSelector name="tviter"></IconSvgSelector>
           </div>
         </div>
       </div>

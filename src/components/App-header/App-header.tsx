@@ -1,23 +1,38 @@
-import React from "react";
 import styles from "./App-header.module.css";
-import { HeaderSvgSelector } from "./HeaderSvgSelector";
+import { IconSvgSelector } from "../../IconSvgSelector/IconSvgSelector";
+import { Link } from "react-router-dom";
+
 const AppHeader = () => {
   return (
     <div className={styles.conteiner}>
-      <div className={styles.logo}>SHOPPE</div>
+      <div className={styles.logo}>
+        <Link to="/">SHOPPE</Link>
+      </div>
       <div className={styles.right}>
-        <div className={styles.shop}>Shop</div>
-        <div className={styles.blog}>Blog</div>
-        <div className={styles.story}>Our Story</div>
+        <div className={styles.shop}>
+          <Link to="/shop">Shop</Link>
+        </div>
+        <div className={styles.blog}>
+          <Link to="/blog">Blog</Link>
+        </div>
+        <div className={styles.story}>
+          <Link to="/story">Our Story</Link>
+        </div>
         <div className={styles.line}></div>
         <div>
-          <HeaderSvgSelector id="magnifier" />
+          <Link to="/search">
+            <IconSvgSelector name="magnifier" />
+          </Link>
         </div>
         <div>
-          <HeaderSvgSelector id="shopping" />
+          <Link to="/shopping">
+            <IconSvgSelector name="shopping" />
+          </Link>
         </div>
         <div>
-          <HeaderSvgSelector id="people" />
+          <Link to="/user">
+            <IconSvgSelector name="people" />
+          </Link>
         </div>
       </div>
     </div>
